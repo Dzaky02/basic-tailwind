@@ -1,9 +1,6 @@
 @tailwind base;
 @tailwind components;
-
-.btn {
-    @apply px-4 py-2 bg-blue-600 text-white rounded;
-}
+@tailwind utilities;
 
 .btn-info {
     @apply bg-blue-500 text-white transition duration-500 cursor-pointer py-2 px-8 rounded;
@@ -13,4 +10,6 @@
     @apply bg-blue-700;
 }
 
-@tailwind utilities;
+.card {
+    @apply bg-blue-100 rounded p-4 border-2 border-blue-800;
+}
