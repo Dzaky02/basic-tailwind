@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:css": "npx tailwindcss-cli@latest build src/style.css -o dist/style.css",
+    "watch:tailwind": "nodemon --watch src/style.css -x \"npm run build:css\"",
+    "serve": "npm run watch:tailwind",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +21,8 @@
   "homepage": "https://github.com/Dzaky02/basic-tailwind#readme",
   "devDependencies": {
     "tailwindcss": "^2.1.4"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.7"
   }
 }
